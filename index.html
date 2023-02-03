@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <title>Book Shelves</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <div id="modal"></div>
+    <div id="backdrop"></div>
+
+    <main>
+        <div class="action_bar">
+            <button id="btn_new_book">
+                New Book!
+            </button>
+            <input type="text" placeholder="Search Book" id="search_book_input">
+        </div>
+
+        <div class="shelves">
+            <div class="complete">
+                <p class="completed_books">Completed books</p>
+                <div class="books"></div>
+            </div>
+
+            <div class="not_complete">
+                <p class="not_completed_books">Not completed books</p>
+                <div class="books"></div>
+            </div>
+        </div>
+
+        <div class="empty">
+            <img src="./assets/empty.svg" alt="">
+        </div>
+
+    </main>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
